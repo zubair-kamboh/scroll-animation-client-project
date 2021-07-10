@@ -21,6 +21,7 @@ h5 {
   background-color: black;
   color: white;
   min-height: 100vh;
+  position: relative;
 }
 
 /* Left Section */
@@ -28,12 +29,23 @@ h5 {
   grid-column: span 7 / auto;
   display: grid;
   place-items: center;
+  height: 100vh;
+  position: relative;
 }
+
+.left__section > * {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
 .big__title {
-  font-size: 10rem;
+  font-size: 25rem;
 }
 /* Right Section */
 .right__section {
+  height: 100%;
+  padding-bottom: 2rem;
   grid-column: span 5 / auto;
 }
 
@@ -66,4 +78,13 @@ h5 {
   cursor: pointer;
   fill: #ffffff;
   overflow: visible;
+}
+
+.dummy-section {
+  background-color: #383838;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
