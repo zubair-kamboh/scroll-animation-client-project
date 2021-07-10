@@ -37,11 +37,19 @@ h5 {
   position: absolute;
   left: 50%;
   top: 50%;
+  /* transform: translate(-50%, -50%); */
+}
+
+.left__section svg {
+  fill: #ffffff;
+  height: auto;
+  width: 25rem;
 }
 
 .big__title {
   font-size: 35rem;
 }
+
 /* Right Section */
 .right__section {
   height: 100%;
@@ -78,6 +86,7 @@ h5 {
   cursor: pointer;
   fill: #ffffff;
   overflow: visible;
+  pointer-events: none;
 }
 
 .dummy-section {
