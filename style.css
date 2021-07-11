@@ -30,7 +30,9 @@ h5 {
   display: grid;
   place-items: center;
   height: 100vh;
+  width: 600px !important;
   position: relative;
+  margin: 0rem 1rem 0rem 0rem !important;
 }
 
 .left__section > * {
@@ -42,7 +44,19 @@ h5 {
 
 .left__section svg {
   fill: #ffffff;
-  height: 32rem;
+  width: 300px;
+  height: 350px !important;
+  /* height: 280px; */
+
+  color: white;
+}
+
+#canvas {
+  z-index: 999;
+}
+
+.left__section svg path {
+  fill: #fff;
 }
 
 .big__title {

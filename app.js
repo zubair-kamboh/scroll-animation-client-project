@@ -29,3 +29,85 @@ buttons.forEach((button, i) => {
   // On Button Click
   button.addEventListener('click', onBtnClick)
 })
+
+window.addEventListener('load', () => {
+  // Canvas Starts Here
+  const canvas = document.querySelector('#canvas')
+  const ctx = canvas.getContext('2d')
+  const left__section = document.querySelector('.left__section')
+
+  canvas.width = canvas.parentElement.offsetWidth
+  canvas.height = 600
+  window.addEventListener('resize', () => {
+    canvas.width = canvas.parentElement.offsetWidth
+    canvas.height = 600
+  })
+
+  const totalWidth = canvas.parentElement.offsetWidth
+
+  // top left to bottom right
+  ctx.moveTo(0, 0)
+  ctx.lineTo(totalWidth, 600)
+  ctx.strokeStyle = '#383838'
+  ctx.lineWidth = 1
+  ctx.stroke()
+
+  // bottom left to top right
+  ctx.moveTo(0, 600)
+  ctx.lineTo(totalWidth, 0)
+  ctx.lineWidth = 1
+  ctx.strokeStyle = '#383838'
+  ctx.stroke()
+
+  // bottom left to top right
+  ctx.moveTo(0, 600)
+  ctx.lineTo(totalWidth, 0)
+  ctx.lineWidth = 0.4
+  ctx.strokeStyle = '#383838'
+  ctx.stroke()
+
+  // Top to bottom 3 lines
+  ctx.moveTo(0, 150)
+  ctx.lineTo(totalWidth, 150)
+  ctx.lineWidth = 0.4
+  ctx.strokeStyle = '#383838'
+  ctx.stroke()
+
+  ctx.moveTo(0, 300)
+  ctx.lineTo(totalWidth, 300)
+  ctx.lineWidth = 0.4
+  ctx.strokeStyle = '#383838'
+  ctx.stroke()
+
+  ctx.moveTo(0, 450)
+  ctx.lineTo(totalWidth, 450)
+  ctx.lineWidth = 0.4
+  ctx.strokeStyle = '#383838'
+  ctx.stroke()
+
+  // Left to Right 3 lines
+  ctx.moveTo(totalWidth / 4, 0)
+  ctx.lineTo(totalWidth / 4, 600)
+  ctx.lineWidth = 0.4
+  ctx.strokeStyle = '#383838'
+  ctx.stroke()
+
+  ctx.moveTo(totalWidth / 2, 0)
+  ctx.lineTo(totalWidth / 2, 600)
+  ctx.lineWidth = 0.4
+  ctx.strokeStyle = '#383838'
+  ctx.stroke()
+
+  ctx.moveTo(totalWidth - totalWidth / 4, 0)
+  ctx.lineTo(totalWidth - totalWidth / 4, 600)
+  ctx.lineWidth = 0.4
+  ctx.strokeStyle = '#383838'
+  ctx.stroke()
+
+  //   draw circle
+  ctx.beginPath()
+  ctx.arc(canvas.width / 2, canvas.height / 2, 150, 0, Math.PI * 2)
+  ctx.lineWidth = 0.4
+
+  ctx.stroke()
+})
