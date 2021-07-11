@@ -42,8 +42,7 @@ h5 {
 
 .left__section svg {
   fill: #ffffff;
-  height: auto;
-  width: 25rem;
+  height: 32rem;
 }
 
 .big__title {
@@ -80,6 +79,15 @@ h5 {
   border-collapse: separate;
   z-index: 10;
 }
+
+.right__section button:focus {
+  background-color: #ffffff;
+}
+
+.right__section button:focus svg {
+  fill: black;
+}
+
 .right__section svg {
   height: 2.3rem;
   width: 2.3rem;

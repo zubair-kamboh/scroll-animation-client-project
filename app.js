@@ -21,6 +21,8 @@ const onBtnClick = (e) => {
   let currentSvgPath = targetBtn.childNodes[1].childNodes[1].getAttribute('d')
 
   svgPath.setAttribute('d', currentSvgPath)
+  // targetBtn.style.backgroundColor = '#ffffff'
+  // targetBtn.childNodes[1].style.fill = '#000000'
 }
 
 buttons.forEach((button, i) => {
