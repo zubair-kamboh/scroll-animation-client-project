@@ -46,68 +46,68 @@ window.addEventListener('load', () => {
   const totalWidth = canvas.parentElement.offsetWidth
 
   // top left to bottom right
+
+  ctx.beginPath()
   ctx.moveTo(0, 0)
   ctx.lineTo(totalWidth, 600)
   ctx.strokeStyle = '#383838'
-  ctx.lineWidth = 1
+  ctx.lineWidth = 0.8
   ctx.stroke()
 
   // bottom left to top right
+  ctx.beginPath()
   ctx.moveTo(0, 600)
   ctx.lineTo(totalWidth, 0)
-  ctx.lineWidth = 1
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
   // bottom left to top right
+  ctx.beginPath()
   ctx.moveTo(0, 600)
   ctx.lineTo(totalWidth, 0)
-  ctx.lineWidth = 0.4
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
   // Top to bottom 3 lines
+  ctx.beginPath()
   ctx.moveTo(0, 150)
   ctx.lineTo(totalWidth, 150)
-  ctx.lineWidth = 0.4
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
+  ctx.beginPath()
   ctx.moveTo(0, 300)
   ctx.lineTo(totalWidth, 300)
-  ctx.lineWidth = 0.4
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
+  ctx.beginPath()
   ctx.moveTo(0, 450)
   ctx.lineTo(totalWidth, 450)
-  ctx.lineWidth = 0.4
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
   // Left to Right 3 lines
+  ctx.beginPath()
   ctx.moveTo(totalWidth / 4, 0)
   ctx.lineTo(totalWidth / 4, 600)
-  ctx.lineWidth = 0.4
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
+  ctx.beginPath()
   ctx.moveTo(totalWidth / 2, 0)
   ctx.lineTo(totalWidth / 2, 600)
-  ctx.lineWidth = 0.4
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
+  ctx.beginPath()
   ctx.moveTo(totalWidth - totalWidth / 4, 0)
   ctx.lineTo(totalWidth - totalWidth / 4, 600)
-  ctx.lineWidth = 0.4
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
   //   draw circle
   ctx.beginPath()
-  ctx.arc(canvas.width / 2, canvas.height / 2, 150, 0, Math.PI * 2)
-  ctx.lineWidth = 0.4
-
+  ctx.ellipse(canvas.width / 2, canvas.height / 2, 150, 143, 0, 0, Math.PI * 2)
   ctx.stroke()
 })
