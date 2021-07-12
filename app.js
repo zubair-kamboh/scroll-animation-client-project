@@ -148,17 +148,20 @@ window.addEventListener('load', () => {
   // Canvas Starts Here
   const canvas = document.querySelector('#canvas')
   const ctx = canvas.getContext('2d')
-  const left__section = document.querySelector('.left__section')
-
+  const totalWidth = canvas.parentElement.offsetWidth
   canvas.width = canvas.parentElement.offsetWidth
   canvas.height = 600
+
+  drawShapes(totalWidth, ctx)
+
   window.addEventListener('resize', () => {
     canvas.width = canvas.parentElement.offsetWidth
     canvas.height = 600
+    drawShapes(totalWidth, ctx)
   })
+})
 
-  const totalWidth = canvas.parentElement.offsetWidth
-
+const drawShapes = (totalWidth, ctx) => {
   // top left to bottom right
 
   ctx.beginPath()
@@ -217,4 +220,4 @@ window.addEventListener('load', () => {
   ctx.beginPath()
   ctx.ellipse(canvas.width / 2, canvas.height / 2, 150, 143, 0, 0, Math.PI * 2)
   ctx.stroke()
-})
+}
