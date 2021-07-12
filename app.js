@@ -61,13 +61,6 @@ window.addEventListener('load', () => {
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
-  // bottom left to top right
-  ctx.beginPath()
-  ctx.moveTo(0, 600)
-  ctx.lineTo(totalWidth, 0)
-  ctx.strokeStyle = '#383838'
-  ctx.stroke()
-
   // Top to bottom 3 lines
   ctx.beginPath()
   ctx.moveTo(0, 150)
