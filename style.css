@@ -100,6 +100,15 @@ h5 {
   fill: black;
 }
 
+.right__section .outline__style button {
+  padding: 0.5rem !important;
+}
+
+.right__section .outline__style button svg {
+  height: 3rem;
+  width: 3rem;
+}
+
 .right__section svg {
   height: 2.3rem;
   width: 2.3rem;
@@ -143,7 +152,7 @@ h5 {
   }
 
   .left__section img {
-    width: 220px;
+    width: 260px;
   }
 
   .right__section button {
@@ -166,7 +175,7 @@ h5 {
   }
 
   .left__section img {
-    width: 200px;
+    width: 240px;
   }
 
   .pin-spacer {
@@ -197,7 +206,7 @@ h5 {
   }
 
   .left__section img {
-    width: 150px;
+    width: 170px;
   }
 
   .pin-spacer {

@@ -133,8 +133,120 @@ const onBtnClick = (e) => {
       svg.src = './images/9.svg'
       break
 
+    // Uppercase Outline
+    case 'A-outline (65)':
+      svg.src = './images/A-OUTLINE.svg'
+      break
+    case 'B-outline (66)':
+      svg.src = './images/B-OUTLINE.svg'
+      break
+    case 'C-outline (67)':
+      svg.src = './images/C-OUTLINE.svg'
+      break
+    case 'D-outline (68)':
+      svg.src = './images/D-OUTLINE.svg'
+      break
+    case 'E-outline (69)':
+      svg.src = './images/E-OUTLINE.svg'
+      break
+    case 'F-outline (70)':
+      svg.src = './images/F-OUTLINE.svg'
+      break
+    case 'G-outline (71)':
+      svg.src = './images/G-OUTLINE.svg'
+      break
+    case 'H-outline (72)':
+      svg.src = './images/H-OUTLINE.svg'
+      break
+    case 'I-outline (73)':
+      svg.src = './images/I-OUTLINE.svg'
+      break
+    case 'J-outline (74)':
+      svg.src = './images/J-OUTLINE.svg'
+      break
+    case 'K-outline (75)':
+      svg.src = './images/K-OUTLINE.svg'
+      break
+    case 'L-outline (76)':
+      svg.src = './images/L-OUTLINE.svg'
+      break
+    case 'M-outline (77)':
+      svg.src = './images/M-OUTLINE.svg'
+      break
+    case 'N-outline (78)':
+      svg.src = './images/N-OUTLINE.svg'
+      break
+    case 'O-outline (79)':
+      svg.src = './images/O-OUTLINE.svg'
+      break
+    case 'P-outline (80)':
+      svg.src = './images/P-OUTLINE.svg'
+      break
+    case 'Q-outline (81)':
+      svg.src = './images/Q-OUTLINE.svg'
+      break
+    case 'R-outline (82)':
+      svg.src = './images/R-OUTLINE.svg'
+      break
+    case 'S-outline (83)':
+      svg.src = './images/S-OUTLINE.svg'
+      break
+    case 'T-outline (84)':
+      svg.src = './images/T-OUTLINE.svg'
+      break
+    case 'U-outline (85)':
+      svg.src = './images/U-OUTLINE.svg'
+      break
+    case 'V-outline (86)':
+      svg.src = './images/V-OUTLINE.svg'
+      break
+    case 'W-outline (87)':
+      svg.src = './images/W-OUTLINE.svg'
+      break
+    case 'X-outline (88)':
+      svg.src = './images/X-OUTLINE.svg'
+      break
+    case 'Y-outline (89)':
+      svg.src = './images/Y-OUTLINE.svg'
+      break
+    case 'Z-outline (90)':
+      svg.src = './images/Z-OUTLINE.svg'
+      break
+
+    // NUMERALS OUTLINES
+    case 'one-outline (90)':
+      svg.src = './images/0-OUTLINE.svg'
+      break
+    case 'two-outline (91)':
+      svg.src = './images/1-OUTLINE.svg'
+      break
+    case 'three-outline (92)':
+      svg.src = './images/2-OUTLINE.svg'
+      break
+    case 'four-outline (93)':
+      svg.src = './images/3-OUTLINE.svg'
+      break
+    case 'five-outline (94)':
+      svg.src = './images/4-OUTLINE.svg'
+      break
+    case 'six-outline (95)':
+      svg.src = './images/5-OUTLINE.svg'
+      break
+    case 'seven-outline (96)':
+      svg.src = './images/6-OUTLINE.svg'
+      break
+    case 'eight-outline (97)':
+      svg.src = './images/7-OUTLINE.svg'
+      break
+    case 'nine-outline (98)':
+      svg.src = './images/8-OUTLINE.svg'
+      break
+    case 'nine-outline (99)':
+      svg.src = './images/9-OUTLINE.svg'
+      break
+
     default:
-      console.log('no')
+      svg.srx = './images/6.svg'
       break
   }
 }
@@ -180,8 +292,8 @@ const drawShapes = (totalWidth, ctx) => {
 
   // Top to bottom 3 lines
   ctx.beginPath()
-  ctx.moveTo(0, 155)
-  ctx.lineTo(totalWidth, 155)
+  ctx.moveTo(0, 130)
+  ctx.lineTo(totalWidth, 130)
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
@@ -192,15 +304,15 @@ const drawShapes = (totalWidth, ctx) => {
   ctx.stroke()
 
   ctx.beginPath()
-  ctx.moveTo(0, 445)
-  ctx.lineTo(totalWidth, 445)
+  ctx.moveTo(0, 470)
+  ctx.lineTo(totalWidth, 470)
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
   // Left to Right 3 lines
   ctx.beginPath()
-  ctx.moveTo(totalWidth / 4, 0)
-  ctx.lineTo(totalWidth / 4, 600)
+  ctx.moveTo(totalWidth / 4 - 30, 0)
+  ctx.lineTo(totalWidth / 4 - 30, 600)
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
@@ -211,13 +323,13 @@ const drawShapes = (totalWidth, ctx) => {
   ctx.stroke()
 
   ctx.beginPath()
-  ctx.moveTo(totalWidth - totalWidth / 4, 0)
-  ctx.lineTo(totalWidth - totalWidth / 4, 600)
+  ctx.moveTo(totalWidth - totalWidth / 4 + 30, 0)
+  ctx.lineTo(totalWidth - totalWidth / 4 + 30, 600)
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
   //   draw circle
   ctx.beginPath()
-  ctx.ellipse(canvas.width / 2, canvas.height / 2, 150, 143, 0, 0, Math.PI * 2)
+  ctx.ellipse(canvas.width / 2, canvas.height / 2, 180, 173, 0, 0, Math.PI * 2)
   ctx.stroke()
 }
