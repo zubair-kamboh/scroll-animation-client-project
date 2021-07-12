@@ -30,32 +30,20 @@ h5 {
   display: grid;
   place-items: center;
   height: 100vh;
-  width: 600px !important;
+  width: 700px !important;
   position: relative;
-  margin: 0rem 1rem 0rem 0rem !important;
+  margin: 0rem 0rem 0rem 1rem !important;
 }
 
 .left__section > * {
   position: absolute;
   left: 50%;
   top: 50%;
-  /* transform: translate(-50%, -50%); */
 }
-/* 
-.left__section svg {
-  fill: #ffffff;
-  width: 300px;
-  height: 350px !important;
-    color: white;
-} */
 
 #canvas {
   z-index: 999;
 }
-/* 
-.left__section svg path {
-  fill: #fff;
-} */
 
 .big__title {
   font-size: 35rem;
@@ -152,7 +140,7 @@ h5 {
   }
 
   .left__section img {
-    width: 260px;
+    width: 300px;
   }
 
   .right__section button {
@@ -175,7 +163,7 @@ h5 {
   }
 
   .left__section img {
-    width: 240px;
+    width: 270px;
   }
 
   .pin-spacer {

@@ -277,23 +277,23 @@ const drawShapes = (totalWidth, ctx) => {
   // top left to bottom right
 
   ctx.beginPath()
-  ctx.moveTo(0, 0)
-  ctx.lineTo(totalWidth, 600)
+  ctx.moveTo(40, 0)
+  ctx.lineTo(totalWidth - 40, 600)
   ctx.strokeStyle = '#383838'
   ctx.lineWidth = 0.8
   ctx.stroke()
 
   // bottom left to top right
   ctx.beginPath()
-  ctx.moveTo(0, 600)
-  ctx.lineTo(totalWidth, 0)
+  ctx.moveTo(40, 600)
+  ctx.lineTo(totalWidth - 40, 0)
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
   // Top to bottom 3 lines
   ctx.beginPath()
-  ctx.moveTo(0, 130)
-  ctx.lineTo(totalWidth, 130)
+  ctx.moveTo(0, 105)
+  ctx.lineTo(totalWidth, 105)
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
@@ -304,15 +304,15 @@ const drawShapes = (totalWidth, ctx) => {
   ctx.stroke()
 
   ctx.beginPath()
-  ctx.moveTo(0, 470)
-  ctx.lineTo(totalWidth, 470)
+  ctx.moveTo(0, 495)
+  ctx.lineTo(totalWidth, 495)
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
   // Left to Right 3 lines
   ctx.beginPath()
-  ctx.moveTo(totalWidth / 4 - 30, 0)
-  ctx.lineTo(totalWidth / 4 - 30, 600)
+  ctx.moveTo(totalWidth / 4 - 25, 0)
+  ctx.lineTo(totalWidth / 4 - 25, 600)
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
@@ -323,13 +323,13 @@ const drawShapes = (totalWidth, ctx) => {
   ctx.stroke()
 
   ctx.beginPath()
-  ctx.moveTo(totalWidth - totalWidth / 4 + 30, 0)
-  ctx.lineTo(totalWidth - totalWidth / 4 + 30, 600)
+  ctx.moveTo(totalWidth - totalWidth / 4 + 25, 0)
+  ctx.lineTo(totalWidth - totalWidth / 4 + 25, 600)
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
   //   draw circle
   ctx.beginPath()
-  ctx.ellipse(canvas.width / 2, canvas.height / 2, 180, 173, 0, 0, Math.PI * 2)
+  ctx.ellipse(canvas.width / 2, canvas.height / 2, 200, 193, 0, 0, Math.PI * 2)
   ctx.stroke()
 }
