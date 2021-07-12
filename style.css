@@ -70,7 +70,7 @@ h5 {
 
 .right__section h6 {
   font-family: 'SOEHNE_BUCH', 'Helvetica', 'Arial', sans-serif;
-  color: #383838;
+  color: rgb(218, 218, 218);
   margin: 1.5rem 0rem 1.5rem 0rem;
   font-size: 1rem;
 }
@@ -96,7 +96,7 @@ h5 {
   background-color: #ffffff;
 }
 
-.right__section button:focus svg {
+.right__section button:focus path {
   fill: black;
 }
 
@@ -207,6 +207,15 @@ h5 {
   .left__section {
     max-height: 300px;
   }
+
+  /* .right__section {
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+
+  .right__section .kgJXva {
+    display: inline-block;
+  } */
 
   .right__section button {
     padding: 0.4rem;
