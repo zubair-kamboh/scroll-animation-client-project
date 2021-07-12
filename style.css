@@ -140,7 +140,7 @@ h5 {
   }
 
   .left__section img {
-    width: 300px;
+    width: 350px;
   }
 
   .right__section button {
@@ -153,13 +153,10 @@ h5 {
   }
 }
 
-@media screen and (max-width: 992px) {
-}
-
 @media screen and (max-width: 800px) {
   #canvas {
     width: 400px;
-    height: 400px;
+    height: 350px;
   }
 
   .left__section img {

@@ -161,6 +161,8 @@ const onBtnClick = (e) => {
       break
     case 'I-outline (73)':
       svg.src = './images/I-OUTLINE.svg'
+      svg.style.height = '440px'
+
       break
     case 'J-outline (74)':
       svg.src = './images/J-OUTLINE.svg'
