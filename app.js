@@ -48,6 +48,7 @@ const onBtnClick = (e) => {
       break
     case 'I (73)':
       svg.src = './images/I.svg'
+      svg.style.height = '440px'
       break
     case 'J (74)':
       svg.src = './images/J.svg'
@@ -292,8 +293,8 @@ const drawShapes = (totalWidth, ctx) => {
 
   // Top to bottom 3 lines
   ctx.beginPath()
-  ctx.moveTo(0, 105)
-  ctx.lineTo(totalWidth, 105)
+  ctx.moveTo(0, 80)
+  ctx.lineTo(totalWidth, 80)
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
@@ -304,15 +305,15 @@ const drawShapes = (totalWidth, ctx) => {
   ctx.stroke()
 
   ctx.beginPath()
-  ctx.moveTo(0, 495)
-  ctx.lineTo(totalWidth, 495)
+  ctx.moveTo(0, 520)
+  ctx.lineTo(totalWidth, 520)
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
   // Left to Right 3 lines
   ctx.beginPath()
-  ctx.moveTo(totalWidth / 4 - 25, 0)
-  ctx.lineTo(totalWidth / 4 - 25, 600)
+  ctx.moveTo(totalWidth / 4 - 55, 0)
+  ctx.lineTo(totalWidth / 4 - 55, 600)
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
@@ -323,13 +324,13 @@ const drawShapes = (totalWidth, ctx) => {
   ctx.stroke()
 
   ctx.beginPath()
-  ctx.moveTo(totalWidth - totalWidth / 4 + 25, 0)
-  ctx.lineTo(totalWidth - totalWidth / 4 + 25, 600)
+  ctx.moveTo(totalWidth - totalWidth / 4 + 55, 0)
+  ctx.lineTo(totalWidth - totalWidth / 4 + 55, 600)
   ctx.strokeStyle = '#383838'
   ctx.stroke()
 
   //   draw circle
   ctx.beginPath()
-  ctx.ellipse(canvas.width / 2, canvas.height / 2, 200, 193, 0, 0, Math.PI * 2)
+  ctx.ellipse(canvas.width / 2, canvas.height / 2, 230, 223, 0, 0, Math.PI * 2)
   ctx.stroke()
 }
